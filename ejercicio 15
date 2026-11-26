@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int h, m, s;
+    for (h = 0; h < 24; h++) {
+        for (m = 0; m < 60; m++) {
+            for (s = 0; s < 60; s++) {
+                if (h < 10) cout << "0";
+                cout << h << ":";
+                if (m < 10) cout << "0";
+                cout << m << ":";
+                if (s < 10) cout << "0";
+                cout << s << endl;
+            }
+        }
+    }
+    return 0;
+}
