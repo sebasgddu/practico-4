@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, x, y, r, mcd, mcm;
+    cout << "Ingrese el primer numero: ";
+    cin >> a;
+    cout << "Ingrese el segundo numero: ";
+    cin >> b;
+    x = a;
+    y = b;
+    while (y != 0) {          // Euclides sobre copias de a y b
+        r = x % y;
+        x = y;
+        y = r;
+    }
+    mcd = x;
+    mcm = (a * b) / mcd;
+    cout << "MCD = " << mcd << endl;
+    cout << "MCM = " << mcm << endl;
+    return 0;
+}
