@@ -1,1 +1,15 @@
+#include <iostream>
+using namespace std;
 
+int main() {
+    int n, i;
+    long long p;
+    cout << "Ingrese N: ";
+    cin >> n;
+    p = 1;
+    for (i = 1; i <= n; i++) {
+        p = p * i;
+    }
+    cout << "P = " << p << endl;
+    return 0;
+}
