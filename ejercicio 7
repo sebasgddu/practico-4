@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i;
+    long long fac;
+    cout << "Ingrese N: ";
+    cin >> n;
+    fac = 1;                // el factorial de 0 es 1
+    for (i = 1; i <= n; i++) {
+        fac = fac * i;
+    }
+    cout << n << "! = " << fac << endl;
+    return 0;
+}
