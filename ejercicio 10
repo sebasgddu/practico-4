@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i, signo;
+    double x, pot, fac, s;
+    cout << "Ingrese x: ";
+    cin >> x;
+    cout << "Ingrese n (impar): ";
+    cin >> n;
+    s = 0;
+    pot = 1;
+    fac = 1;
+    signo = 1;
+    for (i = 1; i <= n; i++) {
+        pot = pot * x;
+        fac = fac * i;
+        if (i % 2 == 1) {          // solo los terminos impares
+            s = s + signo * pot / fac;
+            signo = -signo;        // cambia el signo
+        }
+    }
+    cout << "S = " << s << endl;
+    return 0;
+}
